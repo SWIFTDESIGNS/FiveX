@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>FiveX</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1 {
+      margin-right: 0%;
+      color: orange;
+      -webkit-box-sizing: border-box;
+      text-shadow:
+      0 0 5px #FFA500,
+      0 0 1px #FFA500,
+      0 0 1px #FFA500,
+      0 0 1px #FFA500,
+      0 0 1px #FFA500,
+      0 0 1px #FFA500,
+      0 0 1px #FFA500,
+      0 0 1px #FFA500;
+    }
+    .base-border {
+        margin-left: 39px;
+        width: 920px;
+        height: 651px;
+        background-color: transparent;
+        border-radius: 5px;
+        -webkit-box-sizing: border-box;
+    }
+    #inside-border {
+        width: 910px;
+        height: 685px;
+        background-color:transparent;
+        border-radius: 5px;
+    }
+    #carsl {
+        width: 900px;
+        height: 155px;
+        margin-left: 10px;
+        background-color: #252525f6;
+        border-radius: 4px;
+    }
+    #carsl:hover {
+        background-color: rgba(70, 69, 69, 0.788);
+        color: white;
+        cursor: pointer;
+    }
+    .carstext {
+     color: orange;
+     font-weight: bold;
+     border-bottom: 1px solid white;
+    }
+
+    #carstart {
+        width: 900px;
+        height: 155px;
+        margin-left: 10px;
+        background-color: #252525f6;
+        border-radius: 4px;
+    }
+    #carstart:hover {
+        background-color: rgba(70, 69, 69, 0.788);
+        color: white;
+        cursor: pointer;
+    }
+    .carstarttext {
+     color: orange;
+     font-weight: bold;
+     border-bottom: 1px solid white;
+    }
+
+    #homehsetup {
+        width: 900px;
+        height: 155px;
+        margin-left: 10px;
+        background-color: #252525f6;
+        border-radius: 4px;
+    }
+    #homehsetup:hover {
+        color: white;
+        cursor: pointer;
+    }
+    .homehsetuptext {
+     color: orange;
+     font-weight: bold;
+     border-bottom: 1px solid white;
+    }
+    #back1 {
+        margin-left: 94%;
+        border: none;
+        background-color: transparent;
+        color: white;
+
+    }
+    #back1:hover {
+        background-color: rgb(58, 58, 58);
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    h5 {
+        color: white;
+    }
+    p {
+        color: white;
+    }
+</style>
+<body>
+    <h1>FiveX</h1>
+    <h5>Developing a Server</h5>
+    <div class="base-border">
+        <div id="inside-border">
+             <div id="homehsetup" onclick="homehost()">
+                <h4 class="homehsetuptext">Setup your own homehosted server</h4>
+                <p>By clicking on this tab you will be directed to a new page in witch you will be taught
+                    how to set up your own homehosted local fivem server.<b>
+                </p>
+                <p>And the basics on how to operate your own server before going onto purchase a vps or a server from zaphosting</p>
+             </div>
+             <h4 class="fab fa-discord" id="join-d" onclick="joindiscord()"> Join Discord</h4> 
+             <div id="carstart" style="width: 250px; margin-left: 75px;" onclick="vehicles()">
+                <h4 class="carstarttext">Add Vehicles to your localhost</h4>
+                <p>Installing Addon or replacement vehicles to your server.<br>
+                Learn the ins and out's of vehicle metas 
+                </p>
+          
+             </div>
+             <div id="carsl" style="width: 250px; margin-left: 340px; margin-top: -176px;">
+                <h4 class="carstext">Something</h4>
+            </div>
+             <div id="carsl" style="width: 250px; margin-left: 610px; margin-top: -177px;">
+                    <h4 class="carstext">Something</h4>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+   function label1() {
+            alert('This is currently being worked on')
+    }
+
+    function homehost() {
+            document.getElementById('homehsetup').onclick=(location.href="localserver.html")
+    }
+
+    function vehicles() {
+            document.getElementById('carstart').onclick=(location.href="vehicles.html")
+    }
+
+    function joindiscord() {
+         window.open('https://discord.gg/26nRZPAbsm')
+    }
+
+</script>
+</html>
